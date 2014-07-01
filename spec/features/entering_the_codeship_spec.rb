@@ -8,6 +8,6 @@ feature "Entering the Codeship" do
 
   scenario "User goes to the Codeship" do
     visit root_path
-    expect(page).to_not have_link "codeship.io", href: "https://www.codeship.io"
+    expect(page).to have_link "codeship.io", href: "https://www.codeship.io"
   end
 end
